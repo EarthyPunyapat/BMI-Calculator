@@ -50,8 +50,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/my-tkinter-project.git
-   cd my-tkinter-project
+   git clone https://github.com/yourusername/BMI-Calculator.git
+   cd BMI-Calculator
    ```
 2. Install dependencies:
    ```bash
