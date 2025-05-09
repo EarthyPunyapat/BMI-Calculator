@@ -54,24 +54,11 @@ A BMI calculator built using **CustomTkinter** for doctors and nurses to easily 
 
 ---
 
-### 📝 Attempted but rolled back:
-- Tried combining `validate_age`, `validate_height`, `validate_weight` into a **single combined function**
-  → ❌ **Didn’t work as expected** → reverted to individual functions for clarity & reliability
-
----
-
 ### ⚠️ Problems and solutions:
 | Problem | Solution |
 |---------|----------|
 | Messagebox didn’t work well for displaying multi-line output | Switched to using a **textbox output area instead** |
 | Attempt to merge validation functions made code harder to debug | Kept **separate validation functions** |
-
----
-
-### 🚀 Planned Next Steps:
-- Enable the output textbox to **save the report to a file** (for printing/emailing)
-- Add a **"Clear" button** to reset inputs and outputs
-- Optionally revisit combining validation functions later
 
 ---
 
