@@ -49,6 +49,8 @@ A BMI calculator built using **CustomTkinter** for doctors and nurses to easily 
 - Improved UI styling → **Iron Man themed color palette**
 - Implemented **input restriction: entries now only accept numbers**
 - Removed the old function that showed/hid the checkbox when selecting "Female" (checkbox always visible now)
+- 
+![Image](https://github.com/user-attachments/assets/8ab4a200-43cb-4d8f-80c9-895d0cb9629d)
 
 ---
 
