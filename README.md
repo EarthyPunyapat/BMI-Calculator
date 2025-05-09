@@ -1,7 +1,14 @@
+# Tkinter BMI Calculator Project
 
-# Tkinter GUI Project
+## 🎯 Project Overview
 
-## 📅 Day 1 Progress Log
+A BMI calculator built using **CustomTkinter** for doctors and nurses to easily input patient details (age, gender, height, weight), validate input, and generate a BMI report onscreen. The program prevents BMI calculation for pregnant patients and ensures user-friendly validation and feedback.
+
+---
+
+## 📅 Development Progress
+
+### ✅ Day 1 Progress Log
 
 **References used:**
 - [CTkinter reference video](https://www.youtube.com/watch?v=Miydkti_QVE)
@@ -11,20 +18,20 @@
 
 ---
 
-## 🎨 First UI Design
+### 🎨 First UI Design
 
 ✅ **Problems:** Pregnant checkbox is always displayed regardless of gender selection.  
-![Image](https://github.com/user-attachments/assets/2feb043b-74f1-42f8-9073-c37836f11d5d)
+![UI Screenshot](https://github.com/user-attachments/assets/2feb043b-74f1-42f8-9073-c37836f11d5d)
 
 🎯 **Goal:** Ensure the checkbox only appears when `Female` is selected, and disappears when another gender is chosen.
 
 ---
 
-## ✅ **Things Done Today:**
-![Image](https://github.com/user-attachments/assets/fb2f3ff2-d5a5-489c-964d-ced0283c957b)
-![Image](https://github.com/user-attachments/assets/9952e118-a4d4-48ee-b5ce-cf1ad17be498)
+### ✅ Achievements:
+![UI Screenshot](https://github.com/user-attachments/assets/fb2f3ff2-d5a5-489c-964d-ced0283c957b)
+![UI Screenshot](https://github.com/user-attachments/assets/9952e118-a4d4-48ee-b5ce-cf1ad17be498)
 - Developed a **UI prototype**
-- Built **half-completed logic** for hiding/showing the Pregnant checkbox
+- Built **initial logic** for hiding/showing the Pregnant checkbox
 - Implemented **input validation** for:
   - Age
   - Height
@@ -32,17 +39,37 @@
 
 ---
 
-## 🚀 Planned Improvements:
-- ✅ Complete conditional visibility for the Pregnant checkbox
-- ✅ Add more input validation (e.g., range checks for valid age, weight, height)
-- ✅ Implement BMI calculation formula
-- ✅ Display BMI result with interpretation (underweight, normal, overweight, obesity)
-- ✅ Alert if BMI is unsuitable (e.g., pregnant, invalid ranges)
-- ✅ Generate and display BMI report onscreen
-- ✅ Save BMI report to a file (for printing/emailing)
-- ✅ Ensure input fields only accept integers
-- ✅ Add looping/iteration for input checking
-- ✅ Use iteration for report header formatting (e.g., asterisks)
+## 📅 Day 2 Progress Log
+
+### ✅ New Features / Changes:
+- Switched from using a messagebox to an **output textbox (report box)** displayed on the right side of the UI
+- Implemented **BMI calculation function** with category interpretation
+- Added **validation for Calculate button** → shows an error message inside the output box if any input is invalid
+- Added logic to **prevent BMI calculation if pregnant** (shows message in output box)
+- Improved UI styling → **Iron Man themed color palette**
+- Implemented **input restriction: entries now only accept numbers**
+- Removed the old function that showed/hid the checkbox when selecting "Female" (checkbox always visible now)
+
+---
+
+### 📝 Attempted but rolled back:
+- Tried combining `validate_age`, `validate_height`, `validate_weight` into a **single combined function**
+  → ❌ **Didn’t work as expected** → reverted to individual functions for clarity & reliability
+
+---
+
+### ⚠️ Problems and solutions:
+| Problem | Solution |
+|---------|----------|
+| Messagebox didn’t work well for displaying multi-line output | Switched to using a **textbox output area instead** |
+| Attempt to merge validation functions made code harder to debug | Kept **separate validation functions** |
+
+---
+
+### 🚀 Planned Next Steps:
+- Enable the output textbox to **save the report to a file** (for printing/emailing)
+- Add a **"Clear" button** to reset inputs and outputs
+- Optionally revisit combining validation functions later
 
 ---
 
@@ -50,21 +77,5 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/BMI-Calculator.git
+   git clone https://github.com/EarthyPunyapat/BMI-Calculator.git
    cd BMI-Calculator
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the program:
-   ```bash
-   python main.py
-   ```
-
----
-
-## 💡 Libraries Used
-- `customtkinter`
-- `CTkMessagebox`
-
