@@ -64,7 +64,26 @@ A BMI calculator built using **CustomTkinter** for doctors and nurses to easily 
 
 ## 🛠️ Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/EarthyPunyapat/BMI-Calculator.git
    cd BMI-Calculator
+   ```
+
+2. **(Optional) Create a virtual environment:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # On Mac/Linux
+   .venv\Scripts\activate      # On Windows
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install customtkinter
+   pip install CTkMessagebox
+   ```
+
+4. **Run the program:**
+   ```bash
+   python BMI-Cal.py
+   ```
