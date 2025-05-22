@@ -6,59 +6,44 @@ A BMI calculator built using **CustomTkinter** for doctors and nurses to easily 
 
 ---
 
-## 📅 Development Progress
+## Features
+- Accurate BMI calculation based on age, height, weight, and gender.
+- Input validation for age, height, and weight with user-friendly error messages.
+- Option to specify gender (Male/Female).
+- Special consideration for pregnancy (BMI calculation disabled for pregnant females).
+- Clear display of input values and calculated BMI report.
+- Themed user interface using CustomTkinter.
 
-### ✅ Day 1 Progress Log
+## Technologies Used
+- Python
+- CustomTkinter library for the graphical user interface.
 
-**References used:**
-- [CTkinter reference video](https://www.youtube.com/watch?v=Miydkti_QVE)
-- [Input validation in Tkinter](https://www.pythonguis.com/tutorials/input-validation-tkinter/)
-- [CTkMessagebox library](https://github.com/Akascape/CTkMessagebox)
-- [Events and Binds in Tkinter](https://python-course.eu/tkinter/events-and-binds-in-tkinter.php)
-
----
-
-### 🎨 First UI Design
-
-✅ **Problems:** Pregnant checkbox is always displayed regardless of gender selection.  
-![UI Screenshot](https://github.com/user-attachments/assets/2feb043b-74f1-42f8-9073-c37836f11d5d)
-
-🎯 **Goal:** Ensure the checkbox only appears when `Female` is selected, and disappears when another gender is chosen.
-
----
-
-### ✅ Achievements:
-![UI Screenshot](https://github.com/user-attachments/assets/fb2f3ff2-d5a5-489c-964d-ced0283c957b)
-![UI Screenshot](https://github.com/user-attachments/assets/9952e118-a4d4-48ee-b5ce-cf1ad17be498)
-- Developed a **UI prototype**
-- Built **initial logic** for hiding/showing the Pregnant checkbox
-- Implemented **input validation** for:
-  - Age
-  - Height
-  - Weight
+## How to Use
+1. Enter your age in years (must be between 18 and 79).
+2. Enter your height in centimeters (must be between 45 and 270).
+3. Enter your weight in kilograms (must be between 30 and 300).
+4. Select your gender from the dropdown menu.
+5. If female, indicate if pregnant using the checkbox.
+6. Click the "Calculate BMI" button.
+7. Your BMI and a brief report will be displayed in the output area on the right.
+8. If there are any input errors, messages will guide you to correct them.
 
 ---
 
-## 📅 Day 2 Progress Log
+## Screenshots
+*(Coming Soon: Add screenshots of the application interface here.)*
 
-### ✅ New Features / Changes:
-- Switched from using a messagebox to an **output textbox (report box)** displayed on the right side of the UI
-- Implemented **BMI calculation function** with category interpretation
-- Added **validation for Calculate button** → shows an error message inside the output box if any input is invalid
-- Added logic to **prevent BMI calculation if pregnant** (shows message in output box)
-- Improved UI styling → **Iron Man themed color palette**
-- Implemented **input restriction: entries now only accept numbers**
-- Removed the old function that showed/hid the checkbox when selecting "Female" (checkbox always visible now)
-- 
-![Image](https://github.com/user-attachments/assets/8ab4a200-43cb-4d8f-80c9-895d0cb9629d)
+## 🤝 Contributing
+Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+5. Push to the branch (`git push origin feature/AmazingFeature`).
+6. Open a Pull Request.
 
----
-
-### ⚠️ Problems and solutions:
-| Problem | Solution |
-|---------|----------|
-| Messagebox didn’t work well for displaying multi-line output | Switched to using a **textbox output area instead** |
-| Attempt to merge validation functions made code harder to debug | Kept **separate validation functions** |
+## 📝 License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
